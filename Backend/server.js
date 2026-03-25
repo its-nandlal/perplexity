@@ -1,0 +1,14 @@
+import app from "./src/app.js";
+import connectDB from "./src/config/database.js";
+
+const PORT = process.env.PORT || 3000
+
+
+connectDB().catch((err)=>{
+    console.error("MongoDB connection failed:", err)
+    process.exit()
+})
+
+app.listen(PORT, ()=>{
+    console.log(`Server is start for http://localhost:${PORT}`)
+})

@@ -1,0 +1,78 @@
+# Root .gitignore - For backend and overall project
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Backend specific
+uploads/
+temp/
+logs/
+*.log
+.pid
+seeders/*.json
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.vercel
+.netlify
+.env-cmdrc.json
+
+# Database
+*.sqlite
+*.db
+*.sql
+mongodb-data/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Certificates
+*.pem
+*.key
+*.crt
