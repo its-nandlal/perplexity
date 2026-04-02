@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 const chatSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -12,5 +13,5 @@ const chatSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-const chatModel = mongoose.model.apply('Chat', chatSchema)
+const chatModel = mongoose.model('Chat', chatSchema)
 export default chatModel;

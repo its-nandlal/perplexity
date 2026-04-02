@@ -8,7 +8,7 @@ import Protected from "../features/auth/components/Protected"
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Dashboard />
+        element: <div>Home</div>
     },
     {
         path: "/login",

@@ -13,7 +13,7 @@ export default function App() {
   }, [])
 
   return (
-    <main>
+    <main className="w-full max-h-screen h-screen overflow-hidden">
       <RouterProvider router={router} />
       <Toaster />
     </main>
